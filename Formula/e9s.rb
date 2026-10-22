@@ -1,25 +1,25 @@
 class E9s < Formula
   desc "A k9s-style terminal UI for AWS, read-only by default: ECS, CloudWatch Logs, load balancers, autoscaling"
   homepage "https://github.com/simion/e9s"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/simion/e9s/releases/download/v0.4.0/e9s-aarch64-apple-darwin.tar.xz"
-      sha256 "bf7ef2ba5f629819b98b898160c7ceb92913bb15d6b67745aa45e0ad3ff4c59a"
+      url "https://github.com/simion/e9s/releases/download/v0.5.0/e9s-aarch64-apple-darwin.tar.xz"
+      sha256 "2c8e34e0b14571273eeb6b91a4a9c6a23b15c1591828dac4d426d7d4f5fa6a78"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/simion/e9s/releases/download/v0.4.0/e9s-x86_64-apple-darwin.tar.xz"
-      sha256 "1d0658c9e6640c7c5211d51ba61c02edbc3a203c94ef026dde19e4c251e01805"
+      url "https://github.com/simion/e9s/releases/download/v0.5.0/e9s-x86_64-apple-darwin.tar.xz"
+      sha256 "903fd47348a5d9a63757bfc8eb8d7dd97f12ca1d2747ce03bb857398dc2dd75f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/simion/e9s/releases/download/v0.4.0/e9s-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e2a3959e24c53a17b0b11595982f6cb4c96f6c0943105c6e26cf81cbcebac073"
+      url "https://github.com/simion/e9s/releases/download/v0.5.0/e9s-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d2a1cb0ade4736c5ae451f372ac1f4a94ea70274aea34e58407762fed8cbac0f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/simion/e9s/releases/download/v0.4.0/e9s-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6dc85be9eef2f4a44c81944d29c04c3be42dc0b50e972a0102fad83875bfbfa1"
+      url "https://github.com/simion/e9s/releases/download/v0.5.0/e9s-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8ff40b6fcb8d72c6c2513478912090cfcb0cc26cca51906d4650b8e8bcf83711"
     end
   end
   license "MIT"
